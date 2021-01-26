@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Portfollio</title>
+    <link rel="shortcut icon" href="images/logotitle.png" />
+    <link rel="stylesheet" href="css/master.css">
+    <meta name="Author" content="Zachary Centracchio">
+    <script src="https://kit.fontawesome.com/cf29b918d2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.png" alt="Logo" href = "index.">
+      <h1>Zachary Centracchio's Web Portfolio</h1>
+
+      <nav>
+        <div class="dropdown">
+          <button class="Navbutton collapsible"><i class="fas fa-angle-up"></i></button>
+          <div class="content nav-fold">
+            <a href="index.html">Home</a>
+            <a href="BestWork.html">My Best Work</a>
+            <a href="fact.html">Fun Facts</a>
+            <a href="Resume.html">Resume</a>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+
+      <div class="bout">
+
+
+    <img src="images/headShot.jpg" alt="headshot" class="headshot">
+    <h1>Zac Centracchio</h1>
+    <section>
+      <p>Hello there! My name is Zachary Centracchio. I’m an aspiring game developer who learned how to use software like Blender, Adobe Photoshop, Adobe After Effects, Adobe Illustrator, and the Unreal Engine. I’m a considerate and dependable person who will try their best to ensure a great outcome. </p>
+    </section>
+    </div>
+    </main>
+        <hr>
+    <footer>
+
+      <h3>Zachary Centracchio | Zachary.Centracchio@gmail.com | (802)751-9225 | <a href="https://cawdvt.org/">Cawdvt.org</a></h3>
+    </footer>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+  </body>
+</html>
