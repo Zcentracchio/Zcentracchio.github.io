@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 5px 5px 5px 5px  black;
+  border-radius: 10px;
+  border-color: black;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(0deg, darkgrey, grey, rgb(218, 73, 73));
+  border-radius: 10px;
+
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: 1%;
+  width: 10%;
+  align-self: flex-start;
+
+
+
+}
+.head-text{
+
+  text-align: center;
+}
+.title{
+
+  text-align: center;
+
+  font-size: 70px;
+  width: 60vw;
+  font-family: bookman-jf-pro, serif;
+  margin: 0 auto;
+font-weight: 400;
+
+font-style: normal;
+  border: solid 5px rgb(218, 73, 73);
+  background: rgb(189, 189, 189);
+
+}
+header{
+    background: rgb(33, 33, 33);
+    color:rgb(140, 54, 54);
+    padding-top: 20px;
+    margin: 0 auto;
+}
+body{
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: bookman-jf-pro, serif;
+
+  font-weight: 400;
+
+  font-style: normal;  height: 100%;
+  background-image: url("../images/back.png");
+  background-size: auto;
+}
+main{
+  max-width: 70%;
+  margin:0 auto;
+  border: 2px white;
+}
+footer{
+  background: rgb(33, 33, 33);
+  height: 400px;
+  font-size: 1.3rem;
+  color:white;
+  display: flex;
+  align-items:  center;
+  justify-content:  center;
+  padding: 30px;
+}
+footer > a {
+  color: white;
+}
+ul{
+  text-decoration: none;
+
+}
+hr{
+  margin:0;
+  color: white;
+}
+
+
+
+.plus {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  margin-left: 70%;
+}
+.plus2 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  margin-right: 70%;
+
+}
+.horz{
+  position: relative;
+  background-color: rgb(218, 73, 73);
+  width: 12.5%;
+  height: 50%;
+  left: 43.75%;
+  bottom:23%;
+  transform: rotate(90deg);
+
+
+}
+
+#vert{
+  position: relative;
+  background-color: rgb(218, 73, 73);
+  width: 12.5%;
+  height: 50%;
+  left: 43.75%;
+  top:25%;
+}
+
+
+
+
+.img1{
+  background-image: url("../images/blender.png");
+
+
+
+}
+.img3{
+  background-image: url("../images/sketch.png");
+
+
+
+}
+.img2{
+  background-image: url("../images/cam.png");
+
+  padding-top: 40px;
+}
+.bkgrd{
+  background-size:cover;
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.images{
+  max-width:70%;
+
+}
+.textSelection {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color:white;
+  font-size:1.4em;
+  position:absolute;
+  top:50%;
+  left:50%;
+  text-align:center;
+  transform:translate(-50%,-50%);
+}
+.container:hover  .overlay{
+  transform:scale(1);
+}
+.container{
+  position:relative;
+  width:100%;
+}
+figure{
+  display:grid;
+  grid-template-columns: 1fr ;
+  width:100%; /*change to whatever width you want*/
+  margin: auto;
+
+}
+.overlay{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(105,105,105,.5);
+  width:100%;
+  height:100%;
+  transform: scale(0);
+  transition: .3s ease;
+  overflow:hidden;
+}
+.textSelection > p {
+  padding-left:  5%;
+  padding-right:   5%;
+}
+img{
+  width: 80%;
+  margin: 9%;
+}
+
+
+
+
+/*
+ Collapsing sections
+ */
+ .collapsible {
+
+   color: white;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   height: 150px;
+}
+.Photography{
+  background-image: linear-gradient(90deg, black, grey, rgb(218, 73, 73));
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ text-align:   right;
+}
+.blender{
+  background-image: linear-gradient(90deg, rgb(218, 73, 73), grey, black);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sketch{
+  background-image: linear-gradient(90deg, rgb(218, 73, 73), grey, black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+ .fold{
+  padding: 0 18px;
+  max-height: 0;
+
+  overflow:scroll;
+  transition: max-height .6s ease-out;
+
+ }
+ .fold::-webkit-scrollbar {
+   width: 0px;
+ }
+.size{
+  height: 8700px;
+}
+.button-text{
+  font-size: 20px;
+  width: 20%;
+  margin: 0 ;
+}
+
+
+
+
+
+
+
+
+.nav-fold{
+padding: 0 18px;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height .3s ease-out;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  margin: 0;
+  background: rgb(33, 33, 33);
+  color: rgb(218, 73, 73);
+
+}
+a{
+  margin:10px;
+  text-decoration: none;
+
+}
+.Navbutton {
+  background: rgb(33, 33, 33);
+  color: rgb(218, 73, 73);
+
+  height: 100px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.content a {
+  color: rgb(218, 73, 73);
+  padding: 12px ;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {background-color: #f1f1f1}
+.dropdown:hover > .Navbutton{
+  background: white;
+}
+ .dropdown > .content {
+  display: block;
+}
+.dropdown > .Navbutton{
+  background: rgb(33, 33, 33);
+}
+/* .active, .dropdown > i {
+  background-color: white;
+  transform: scale(3);
+  transform: rotate(180deg);
+  transition: .3s;
+}  */
+.active, .Navbutton {
+  background-color:white;
+
+}
+
+ @media(min-width: 1260px){
+  .size{
+    height: 100%;
+  }
+}
+
+
+
+@media(max-width: 1100px){
+  .textSelection{
+    font-size: 20px;
+    height: 36vh;
+
+  }
+  .size{
+    height: 100%;
+  }
+  h1{
+    font-size: 50px;
+  }
+}
+@media(max-width: 800px){
+  .textSelection{
+    font-size: 15px;
+    height: 24vh;
+  }
+
+}
+@media(max-width: 500px){
+  .textSelection{
+    font-size: 10px;
+    height: 15vh;
+    top: 20%;
+  }
+  h1{
+    font-size: 30px;
+  }
+
+}

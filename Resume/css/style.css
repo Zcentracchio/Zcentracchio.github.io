@@ -1,0 +1,18 @@
+footer{
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+}
+header{
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+}
+a{
+  color: white;
+  font-size: 20px;
+}
