@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/best.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/cf29b918d2.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
     </div>
     <nav>
       <div class="dropdown">
-        <button class="Navbutton collapsible"><i class="fas fa-bars"></i></button>
+        <div class="Navbutton collapsible button"><i class="fas fa-bars"></i></div>
         <div class="content nav-fold">
           <a href="index.html">Home</a>
           <a href="BestWork.html">My Best Work</a>
@@ -37,7 +36,7 @@
 
 
 
-    <button type="button"  name="button" class="collapsible blender" onclick = "myFunction();">
+    <div class="collapsible blender button" onclick = "myFunction();">
       <p class="button-text">My Blender Work </p>
       <div class = "plus">
 
@@ -45,7 +44,7 @@
 
     <div class = "horz"></div>
   </div>
-    </button>
+    </div>
 
     <div class="fold">
       <div class="size">
@@ -57,7 +56,7 @@
 
       <div class="container">
         <div class="img1 bkgrd">
-          <img src="BestWork/images/PotatoHead.png" class="images"alt="Potato Head">
+          <img src="BestWork/images/PotatoHead.png" class="images" alt="Potato Head">
         </div>
         <div class="overlay">
           <section class="textSelection">
@@ -140,23 +139,23 @@
 
     <hr>
 
-    <button type="button"  name="button" class="collapsible Photography" onclick = "myFunction();">
+    <div class="button collapsible Photography" onclick = "myFunction();">
 
       <div class = "plus2">
 
-      <div id = "vert"></div>
+      <div class = "vert"></div>
 
     <div class = "horz"></div>
   </div>
     <p class="button-text">My Photography Work </p>
-    </button>
+    </div>
       <div class=" fold">
         <figure>
 
 
         <div class="container">
           <div class="img2 bkgrd">
-            <img src="images/basket.jpg" alt="shroom">
+            <img src="images/basket.png" alt="shroom">
           </div>
           <div class="overlay">
             <section class="textSelection">
@@ -167,7 +166,7 @@
         </div>
         <div class="container">
           <div class="img2 bkgrd">
-            <img src="images/leaves.jpg" alt="shroom">
+            <img src="images/leaves.png" alt="shroom">
           </div>
           <div class="overlay">
             <section class="textSelection">
@@ -178,7 +177,7 @@
         </div>
         <div class="container">
           <div class="img2 bkgrd">
-            <img src="images/fire.jpg" alt="shroom">
+            <img src="images/fire.png" alt="shroom">
           </div>
           <div class="overlay">
             <section class="textSelection">
@@ -194,15 +193,15 @@
 
 <!-- scketches -->
       <hr>
-      <button type="button"  name="button" class="collapsible sketch" onclick = "myFunction();">
+      <div class=" button collapsible sketch" onclick = "myFunction();">
         <p class="button-text">My Sketch Work</p>
         <div class = "plus">
 
-        <div id = "vert"></div>
+        <div class = "vert"></div>
 
       <div class = "horz"></div>
     </div>
-      </button>
+      </div>
         <div class=" fold">
           <figure>
           <div class="container">
@@ -230,11 +229,23 @@
           </figure>
         </div>
     <script>
+    var x = 1;
     function myFunction(){
+
       var img = document.getElementById('vert');
+      if (x = 1) {
         img.style.transform = 'rotate(90deg)';
         img.style.display = 'block';
         img.style.transition = '.4s ease';
+        x = 0;
+      }
+      else if (x = 0) {
+        img.style.transform = 'rotate(-90deg)';
+        img.style.display = 'contents';
+        img.style.transition = '.4s ease';
+        x = 1;
+      }
+
 
     }
     var coll = document.getElementsByClassName("collapsible");
